@@ -1,34 +1,11 @@
 import './styles/style.css';
+import AllTasks from './modules/addNewTask.js';
+import updateValue from './modules/updateTask.js';
+import executeRemoval from './modules/remove.js';
 
-const toDoTasks = [
-  {
-    index: 0,
-    description: 'Go to Gym',
-    completed: false,
-  },
-  {
-    index: 1,
-    description: 'Buy Groceries',
-    completed: false,
-  },
-  {
-    index: 2,
-    description: 'Purchase Clothes',
-    completed: false,
-  },
-];
-
-const tasksTodo = () => {
-  const divCard = toDoTasks.map((task) => `<li class="listedTasks">
-              <div>
-                <input type="checkbox" class="check">
-                  ${task.description}
-              </div>
-              <span><i class="fas fa-grip-vertical"></i></span>
-              </li>`);
-  return divCard;
-};
-
-window.addEventListener('load', () => {
-  document.querySelector('.staticUl').innerHTML = tasksTodo().join('');
-});
+const testWork = new AllTasks();
+testWork.storedLocal();
+testWork.formAct();
+testWork.createTask();
+executeRemoval();
+updateValue();
