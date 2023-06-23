@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <script src="https://kit.fontawesome.com/d19de2aa55.js" crossorigin="anonymous"></script>
     <title>ToDo List</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"><script defer src="bundle.js"></script><script defer src="bundlea7659c0b6d21db3894d5.js"></script></head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><script defer src="bundle.js"></script><script defer src="bundle53afd2375d151ac4047e.js"></script></head>
   <body>
     <div class="mainContainer">
       <div class="container">
@@ -13,16 +13,13 @@
           <span><i class="fas fa-rotate"></i></span>
         </div>
         <div class="textSection">
-          <form action="" class="staticHead">
-            <input placeholder="Add to your list..." type="text">
-            <input type="submit" title="Click this icon or press ENTER" >
+          <form id="forms"  class="staticHead">
+            <input placeholder="Add to your list..." type="text" class="taskItem" required />
+            <button type="submit" title="click enter or press enter to add taskItem"><i class="fa-solid fa-arrow-turn-down fa-rotate-90 icon"></i></button>
           </form>
         </div>
         <div class="tasks">
-          <ul class="staticUl">
-            <li><input type="checkbox" class="check">Watch Tv</li>
-            <li><input type="checkbox" class="check">Jogging</li>
-          </ul>
+          <ul class="staticUl"></ul>
         </div>
         <button class="clearAll">Clear All Completed</button>
       </div>

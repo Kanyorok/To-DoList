@@ -86,3 +86,19 @@ body {
   justify-content: space-between;
   padding-right: 15px;
 }
+
+.itemsTasks {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.staticHead button {
+  background-color: transparent;
+  border: none;
+}
+
+.listedTasks button {
+  background-color: transparent;
+  border: none;
+}
