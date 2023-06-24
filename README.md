@@ -14,7 +14,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -31,7 +30,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Awesome-Books] <a name="about-project"></a>
+# 📖 [TODO LIST APP] <a name="about-project"></a>
 
 In this project, I have built a simple HTML list of To Do tasks. This simple web page is built using webpack and served by a webpack dev server.
 
@@ -70,10 +69,6 @@ In this project, I have built a simple HTML list of To Do tasks. This simple web
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
-
- ## 🚀 Live Demo <a name="live-demo"></a> 
- 
- [Live Demo Link](https://RKanyoro.github.io/To-DoList/)
  
 
 
@@ -99,11 +94,16 @@ In this project, I have built a simple HTML list of To Do tasks. This simple web
 Install this project with:
 
 - Open your command prompt or terminal and run.
--  git clone https://github.com/RKanyoro/AwesomeBooks-ES6.git
+- git clone https://github.com/RKanyoro/To-DoList.git
+- cd To-DoList
+- git checkout interactiveList (For Contributions/Comments on Pull Request 4)
+- npm install webpack webpack-cli --save-dev (Win OS).
+- npm start (To Launch App).
+
 
 ### Usage
 
-- this is my portflio and will use to insert my upcoming projects.
+- this is a To-Do list app and I will use it to insert my upcoming projects.
 
 ### Run tests
 
@@ -113,11 +113,6 @@ To run tests, run the following command:
 - npx hint .
 - npx stylelint "\*_/_.{css,scss}"
 - npm start
-
-### Deployment
-
-- Project is deployed using [GitHub Pages](https://pages.github.com/)
-- [🚀 Live Demo Link Provided Above ⬆️](#live-demo)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,7 +149,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]()
+Feel free to check the [issues page](https://github.com/RKanyoro/To-DoList/issues)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

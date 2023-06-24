@@ -1,3 +1,5 @@
+import createTask from './createUi.js';
+
 export default class AllTasks {
   constructor() {
     this.taskContainer = document.querySelector('.staticUl');
@@ -19,36 +21,6 @@ export default class AllTasks {
     }
   }
 
-  createTask = () => {
-    this.taskContainer.innerHTML = '';
-    this.tasks.forEach((task, index) => {
-      const taskComponent = document.createElement('li');
-      taskComponent.classList.add('listedTasks');
-      taskComponent.setAttribute('id', `${index + 20}`);
-      const divisionSect = document.createElement('div');
-      divisionSect.classList.add('itemsTasks');
-      taskComponent.append(divisionSect);
-      const infoInput = document.createElement('input');
-      infoInput.setAttribute('type', 'checkbox');
-      const paragraph = document.createElement('p');
-      paragraph.classList.add('editText');
-      paragraph.innerHTML = `${task.desc}`;
-      paragraph.setAttribute('id', `${index + 10}`);
-      divisionSect.appendChild(infoInput);
-      divisionSect.appendChild(paragraph);
-      const spanned = document.createElement('button');
-      const italic = document.createElement('i');
-      italic.classList.add('fas');
-      italic.setAttribute('id', `${index}`);
-      italic.classList.add('deleteBtn');
-      italic.classList.add('fa-grip-vertical');
-      spanned.append(italic);
-      taskComponent.append(spanned);
-
-      this.taskContainer.appendChild(taskComponent);
-    });
-  }
-
   addTask = (e) => {
     e.preventDefault();
     const taskItemVal = this.valTask.value;
@@ -63,13 +35,14 @@ export default class AllTasks {
     this.tasks = updatedArr;
     this.tasks.push(tasksItems);
     localStorage.setItem('Today\'s Tasks', JSON.stringify(this.tasks));
-    this.createTask();
+    createTask(this.tasks);
 
     // Reset input fields
     this.valTask.value = '';
   }
 
   formAct = () => {
+    createTask(this.tasks);
     this.form.addEventListener('submit', this.addTask);
   }
 }
