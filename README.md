@@ -14,7 +14,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -70,10 +69,6 @@ In this project, I have built a simple HTML list of To Do tasks. This simple web
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
-
- ## 🚀 Live Demo <a name="live-demo"></a> 
- 
- [Live Demo Link](https://RKanyoro.github.io/To-DoList/)
  
 
 
@@ -119,11 +114,6 @@ To run tests, run the following command:
 - npx stylelint "\*_/_.{css,scss}"
 - npm start
 
-### Deployment
-
-- Project is deployed using [GitHub Pages](https://pages.github.com/)
-- [🚀 Live Demo Link Provided Above ⬆️](#live-demo)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -159,7 +149,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]()
+Feel free to check the [issues page](https://github.com/RKanyoro/To-DoList/issues)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
